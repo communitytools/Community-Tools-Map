@@ -1,0 +1,22 @@
+<?php
+/**
+ * @file
+ * Code for the CT Map feature.
+ */
+
+include_once('cmtls_map.features.inc');
+
+/**
+ * Implements hook_cmtls_app
+ * 
+ * @see cmtls.module
+ */
+function cmtls_map_cmtls_app() {
+  return array(
+    'cmtls_map' => array(
+      'title' => t('Map'),
+      'description' => t('Group content on a map'),
+    ),
+  );
+}
+
