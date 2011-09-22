@@ -55,14 +55,11 @@ function cmtls_map_views_default_views() {
   $handler->display->display_options['row_plugin'] = 'fields';
   $handler->display->display_options['row_options']['hide_empty'] = 1;
   $handler->display->display_options['row_options']['default_field_elements'] = 1;
-  /* No results behavior: Global: Text area */
-  $handler->display->display_options['empty']['area']['id'] = 'area';
-  $handler->display->display_options['empty']['area']['table'] = 'views';
-  $handler->display->display_options['empty']['area']['field'] = 'area';
-  $handler->display->display_options['empty']['area']['empty'] = FALSE;
-  $handler->display->display_options['empty']['area']['content'] = 'asdsadasdasdasd';
-  $handler->display->display_options['empty']['area']['format'] = 'filtered_html';
-  $handler->display->display_options['empty']['area']['tokenize'] = 0;
+  /* Relationship: Group membership: Node group membership */
+  $handler->display->display_options['relationships']['og_membership_rel']['id'] = 'og_membership_rel';
+  $handler->display->display_options['relationships']['og_membership_rel']['table'] = 'node';
+  $handler->display->display_options['relationships']['og_membership_rel']['field'] = 'og_membership_rel';
+  $handler->display->display_options['relationships']['og_membership_rel']['required'] = 1;
   /* Field: Content: Title */
   $handler->display->display_options['fields']['title']['id'] = 'title';
   $handler->display->display_options['fields']['title']['table'] = 'node';
@@ -180,18 +177,19 @@ function cmtls_map_views_default_views() {
   $handler->display->display_options['sorts']['created']['table'] = 'node';
   $handler->display->display_options['sorts']['created']['field'] = 'created';
   $handler->display->display_options['sorts']['created']['order'] = 'DESC';
-  /* Contextual filter: Field: Groups audience (group_audience:gid) */
-  $handler->display->display_options['arguments']['group_audience_gid']['id'] = 'group_audience_gid';
-  $handler->display->display_options['arguments']['group_audience_gid']['table'] = 'field_data_group_audience';
-  $handler->display->display_options['arguments']['group_audience_gid']['field'] = 'group_audience_gid';
-  $handler->display->display_options['arguments']['group_audience_gid']['default_action'] = 'default';
-  $handler->display->display_options['arguments']['group_audience_gid']['default_argument_type'] = 'og_context';
-  $handler->display->display_options['arguments']['group_audience_gid']['default_argument_skip_url'] = 0;
-  $handler->display->display_options['arguments']['group_audience_gid']['summary']['number_of_records'] = '0';
-  $handler->display->display_options['arguments']['group_audience_gid']['summary']['format'] = 'default_summary';
-  $handler->display->display_options['arguments']['group_audience_gid']['summary_options']['items_per_page'] = '25';
-  $handler->display->display_options['arguments']['group_audience_gid']['break_phrase'] = 0;
-  $handler->display->display_options['arguments']['group_audience_gid']['not'] = 0;
+  /* Contextual filter: OG membership: Group gid */
+  $handler->display->display_options['arguments']['group']['id'] = 'group';
+  $handler->display->display_options['arguments']['group']['table'] = 'og_membership';
+  $handler->display->display_options['arguments']['group']['field'] = 'group';
+  $handler->display->display_options['arguments']['group']['relationship'] = 'og_membership_rel';
+  $handler->display->display_options['arguments']['group']['default_action'] = 'default';
+  $handler->display->display_options['arguments']['group']['default_argument_type'] = 'og_context';
+  $handler->display->display_options['arguments']['group']['default_argument_skip_url'] = 0;
+  $handler->display->display_options['arguments']['group']['summary']['number_of_records'] = '0';
+  $handler->display->display_options['arguments']['group']['summary']['format'] = 'default_summary';
+  $handler->display->display_options['arguments']['group']['summary_options']['items_per_page'] = '25';
+  $handler->display->display_options['arguments']['group']['break_phrase'] = 0;
+  $handler->display->display_options['arguments']['group']['not'] = 0;
   /* Filter criterion: Content: Published */
   $handler->display->display_options['filters']['status']['id'] = 'status';
   $handler->display->display_options['filters']['status']['table'] = 'node';

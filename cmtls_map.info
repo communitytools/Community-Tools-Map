@@ -1,5 +1,6 @@
 core = "7.x"
 dependencies[] = "cmtls"
+dependencies[] = "context"
 dependencies[] = "gmap"
 dependencies[] = "gmap_location"
 dependencies[] = "location"
