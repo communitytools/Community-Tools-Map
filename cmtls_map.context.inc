@@ -5,17 +5,17 @@
  */
 
 /**
- * Implementation of hook_context_default_contexts().
+ * Implements hook_context_default_contexts().
  */
 function cmtls_map_context_default_contexts() {
   $export = array();
 
-  $context = new stdClass;
+  $context = new stdClass();
   $context->disabled = FALSE; /* Edit this to true to make a default context disabled initially */
   $context->api_version = 3;
-  $context->name = 'CT Map';
-  $context->description = 'Community Tools map';
-  $context->tag = 'cmtls';
+  $context->name = 'cmtls_map_page';
+  $context->description = 'Community Tools map page';
+  $context->tag = 'CT map';
   $context->conditions = array(
     'cmtls_app_type' => array(
       'values' => array(
@@ -37,10 +37,16 @@ function cmtls_map_context_default_contexts() {
   $context->reactions = array(
     'block' => array(
       'blocks' => array(
-        'views-cmtls_map-block_1' => array(
+        'views-cmtls_map-cmtls_map_block' => array(
           'module' => 'views',
-          'delta' => 'cmtls_map-block_1',
+          'delta' => 'cmtls_map-cmtls_map_block',
           'region' => 'content',
+          'weight' => '-10',
+        ),
+        'views-e94908421a9ba94bc30d4cad0a1c03f6' => array(
+          'module' => 'views',
+          'delta' => 'e94908421a9ba94bc30d4cad0a1c03f6',
+          'region' => 'sidebar_first',
           'weight' => '-10',
         ),
       ),
@@ -50,9 +56,9 @@ function cmtls_map_context_default_contexts() {
 
   // Translatables
   // Included for use with string extractors like potx.
-  t('Community Tools map');
-  t('cmtls');
-  $export['CT Map'] = $context;
+  t('CT map');
+  t('Community Tools map page');
+  $export['cmtls_map_page'] = $context;
 
   return $export;
 }
