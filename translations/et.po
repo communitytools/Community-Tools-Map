@@ -1,0 +1,143 @@
+# $Id$
+#
+# Estonian translation of Drupal (general)
+# Copyright YEAR NAME <EMAIL@ADDRESS>
+# Generated from files:
+#  cmtls_map.context.inc: n/a
+#  cmtls_map.views_default.inc: n/a
+#  cmtls_map.module: n/a
+#  cmtls_map.info: n/a
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2012-05-25 16:39+0300\n"
+"PO-Revision-Date: 2012-05-25 16:39+0300\n"
+"Last-Translator: NAME <EMAIL@ADDRESS>\n"
+"Language-Team: Estonian <EMAIL@ADDRESS>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n!=1);\n"
+
+#: cmtls_map.context.inc:59
+msgid "CT map"
+msgstr ""
+
+#: cmtls_map.context.inc:60
+msgid "Community Tools map page"
+msgstr ""
+
+#: cmtls_map.views_default.inc:493
+msgid "Master"
+msgstr ""
+
+#: cmtls_map.views_default.inc:494
+msgid "more"
+msgstr "veel"
+
+#: cmtls_map.views_default.inc:495
+msgid "Apply"
+msgstr "Rakenda"
+
+#: cmtls_map.views_default.inc:496
+msgid "Reset"
+msgstr "Lähtesta"
+
+#: cmtls_map.views_default.inc:497
+msgid "Sort by"
+msgstr "Sorteerimise alus"
+
+#: cmtls_map.views_default.inc:498
+msgid "Asc"
+msgstr "Kasvav"
+
+#: cmtls_map.views_default.inc:499
+msgid "Desc"
+msgstr "Kahanev"
+
+#: cmtls_map.views_default.inc:500
+msgid "Items per page"
+msgstr "Kirjeid lehel"
+
+#: cmtls_map.views_default.inc:501
+msgid "- All -"
+msgstr "- Kõik -"
+
+#: cmtls_map.views_default.inc:502
+msgid "Offset"
+msgstr "Nihe"
+
+#: cmtls_map.views_default.inc:503
+msgid "group membership"
+msgstr ""
+
+#: cmtls_map.views_default.inc:504
+msgid "location date"
+msgstr ""
+
+#: cmtls_map.views_default.inc:505
+msgid "Title"
+msgstr "Pealkiri"
+
+#: cmtls_map.views_default.inc:506
+msgid "Last comment time"
+msgstr "Viimase kommentaari aeg"
+
+#: cmtls_map.views_default.inc:507
+msgid "Application content block"
+msgstr ""
+
+#: cmtls_map.views_default.inc:508
+msgid "Locations on the application page"
+msgstr ""
+
+#: cmtls_map.views_default.inc:509
+msgid "All"
+msgstr "Kõik"
+
+#: cmtls_map.views_default.inc:510
+msgid "Application map block"
+msgstr ""
+
+#: cmtls_map.views_default.inc:511
+msgid "Locations on map on the application page"
+msgstr ""
+
+#: cmtls_map.views_default.inc:512
+msgid "Latitude"
+msgstr "Laiuskraad"
+
+#: cmtls_map.views_default.inc:513
+msgid "Longitude"
+msgstr "Pikkuskraad"
+
+#: cmtls_map.views_default.inc:514
+msgid "Page"
+msgstr "Lehekülg"
+
+#: cmtls_map.views_default.inc:515
+msgid "All mapped items"
+msgstr ""
+
+#: cmtls_map.module:17
+msgid "Map"
+msgstr ""
+
+#: cmtls_map.module:18
+msgid "Group content on a map"
+msgstr ""
+
+#: cmtls_map.info:0
+msgid "CT Map"
+msgstr ""
+
+#: cmtls_map.info:0
+msgid "Community Tools Map"
+msgstr ""
+
+#: cmtls_map.info:0
+msgid "Community Tools"
+msgstr ""
+
