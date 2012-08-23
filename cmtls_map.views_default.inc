@@ -44,7 +44,7 @@ function cmtls_map_views_default_views() {
   $handler->display->display_options['row_options']['advanced'] = 0;
   $handler->display->display_options['row_options']['grouping_fieldset']['group_field'] = 'node|sticky';
   $handler->display->display_options['row_options']['default_fieldset']['view_mode'] = 'cmtls_teaser';
-  /* Relationship: Group membership: Node group membership */
+  /* Relationship: OG membership: OG membership from Node */
   $handler->display->display_options['relationships']['og_membership_rel']['id'] = 'og_membership_rel';
   $handler->display->display_options['relationships']['og_membership_rel']['table'] = 'node';
   $handler->display->display_options['relationships']['og_membership_rel']['field'] = 'og_membership_rel';
@@ -89,12 +89,16 @@ function cmtls_map_views_default_views() {
   $handler->display->display_options['sorts']['last_comment_timestamp']['order'] = 'DESC';
   $handler->display->display_options['sorts']['last_comment_timestamp']['exposed'] = TRUE;
   $handler->display->display_options['sorts']['last_comment_timestamp']['expose']['label'] = 'Last comment time';
+  $handler->display->display_options['filter_groups']['groups'] = array(
+    1 => 'AND',
+    2 => 'OR',
+  );
   /* Filter criterion: Content: Published */
   $handler->display->display_options['filters']['status']['id'] = 'status';
   $handler->display->display_options['filters']['status']['table'] = 'node';
   $handler->display->display_options['filters']['status']['field'] = 'status';
-  $handler->display->display_options['filters']['status']['value'] = 1;
-  $handler->display->display_options['filters']['status']['group'] = 0;
+  $handler->display->display_options['filters']['status']['value'] = '1';
+  $handler->display->display_options['filters']['status']['group'] = 1;
   $handler->display->display_options['filters']['status']['expose']['operator'] = FALSE;
   /* Filter criterion: Content: Type */
   $handler->display->display_options['filters']['type']['id'] = 'type';
@@ -104,22 +108,27 @@ function cmtls_map_views_default_views() {
     'cmtls_core_node_types' => 'cmtls_core_node_types',
     'cmtls_content_node_types' => 'cmtls_content_node_types',
   );
+  $handler->display->display_options['filters']['type']['group'] = 1;
   /* Filter criterion: Location: Longitude */
   $handler->display->display_options['filters']['longitude']['id'] = 'longitude';
   $handler->display->display_options['filters']['longitude']['table'] = 'location';
   $handler->display->display_options['filters']['longitude']['field'] = 'longitude';
-  $handler->display->display_options['filters']['longitude']['operator'] = 'not empty';
+  $handler->display->display_options['filters']['longitude']['operator'] = '!=';
+  $handler->display->display_options['filters']['longitude']['value']['value'] = '0.000000';
+  $handler->display->display_options['filters']['longitude']['group'] = 2;
   /* Filter criterion: Location: Latitude */
   $handler->display->display_options['filters']['latitude']['id'] = 'latitude';
   $handler->display->display_options['filters']['latitude']['table'] = 'location';
   $handler->display->display_options['filters']['latitude']['field'] = 'latitude';
-  $handler->display->display_options['filters']['latitude']['operator'] = 'not empty';
+  $handler->display->display_options['filters']['latitude']['operator'] = '!=';
+  $handler->display->display_options['filters']['latitude']['value']['value'] = '0.000000';
+  $handler->display->display_options['filters']['latitude']['group'] = 2;
 
   /* Display: Application content block */
   $handler = $view->new_display('block', 'Application content block', 'cmtls_map_app_wall_block');
   $handler->display->display_options['display_description'] = 'Locations on the application page';
   $handler->display->display_options['defaults']['arguments'] = FALSE;
-  /* Contextual filter: OG membership: Group gid */
+  /* Contextual filter: OG membership: OG group gid */
   $handler->display->display_options['arguments']['group']['id'] = 'group';
   $handler->display->display_options['arguments']['group']['table'] = 'og_membership';
   $handler->display->display_options['arguments']['group']['field'] = 'group';
@@ -290,7 +299,7 @@ function cmtls_map_views_default_views() {
   $handler->display->display_options['fields']['longitude']['style'] = 'dd';
   $handler->display->display_options['defaults']['sorts'] = FALSE;
   $handler->display->display_options['defaults']['arguments'] = FALSE;
-  /* Contextual filter: OG membership: Group gid */
+  /* Contextual filter: OG membership: OG group gid */
   $handler->display->display_options['arguments']['group']['id'] = 'group';
   $handler->display->display_options['arguments']['group']['table'] = 'og_membership';
   $handler->display->display_options['arguments']['group']['field'] = 'group';
@@ -304,35 +313,9 @@ function cmtls_map_views_default_views() {
   $handler->display->display_options['arguments']['group']['summary_options']['items_per_page'] = '25';
   $handler->display->display_options['arguments']['group']['break_phrase'] = 0;
   $handler->display->display_options['arguments']['group']['not'] = 0;
-  $handler->display->display_options['defaults']['filters'] = FALSE;
-  /* Filter criterion: Content: Published */
-  $handler->display->display_options['filters']['status']['id'] = 'status';
-  $handler->display->display_options['filters']['status']['table'] = 'node';
-  $handler->display->display_options['filters']['status']['field'] = 'status';
-  $handler->display->display_options['filters']['status']['value'] = 1;
-  $handler->display->display_options['filters']['status']['group'] = 0;
-  $handler->display->display_options['filters']['status']['expose']['operator'] = FALSE;
-  /* Filter criterion: Content: Type */
-  $handler->display->display_options['filters']['type']['id'] = 'type';
-  $handler->display->display_options['filters']['type']['table'] = 'node';
-  $handler->display->display_options['filters']['type']['field'] = 'type';
-  $handler->display->display_options['filters']['type']['value'] = array(
-    'cmtls_core_node_types' => 'cmtls_core_node_types',
-    'cmtls_content_node_types' => 'cmtls_content_node_types',
-  );
-  /* Filter criterion: Location: Latitude */
-  $handler->display->display_options['filters']['latitude']['id'] = 'latitude';
-  $handler->display->display_options['filters']['latitude']['table'] = 'location';
-  $handler->display->display_options['filters']['latitude']['field'] = 'latitude';
-  $handler->display->display_options['filters']['latitude']['operator'] = 'not empty';
-  /* Filter criterion: Location: Longitude */
-  $handler->display->display_options['filters']['longitude']['id'] = 'longitude';
-  $handler->display->display_options['filters']['longitude']['table'] = 'location';
-  $handler->display->display_options['filters']['longitude']['field'] = 'longitude';
-  $handler->display->display_options['filters']['longitude']['operator'] = 'not empty';
 
-  /* Display: Page */
-  $handler = $view->new_display('page', 'Page', 'cmtls_map_page');
+  /* Display: Global map page */
+  $handler = $view->new_display('page', 'Global map page', 'cmtls_map_page');
   $handler->display->display_options['defaults']['title'] = FALSE;
   $handler->display->display_options['title'] = 'All mapped items';
   $handler->display->display_options['defaults']['style_plugin'] = FALSE;
@@ -500,7 +483,7 @@ function cmtls_map_views_default_views() {
     t('Items per page'),
     t('- All -'),
     t('Offset'),
-    t('group membership'),
+    t('OG membership from node'),
     t('location date'),
     t('Title'),
     t('Last comment time'),
@@ -511,7 +494,7 @@ function cmtls_map_views_default_views() {
     t('Locations on map on the application page'),
     t('Latitude'),
     t('Longitude'),
-    t('Page'),
+    t('Global map page'),
     t('All mapped items'),
   );
   $export['cmtls_map'] = $view;
