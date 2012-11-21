@@ -12,8 +12,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
-"POT-Creation-Date: 2012-05-28 15:25+0300\n"
-"PO-Revision-Date: 2012-05-28 15:25+0300\n"
+"POT-Creation-Date: 2012-11-05 14:12+0200\n"
+"PO-Revision-Date: 2012-11-05 14:12+0200\n"
 "Last-Translator: NAME <EMAIL@ADDRESS>\n"
 "Language-Team: Estonian <EMAIL@ADDRESS>\n"
 "MIME-Version: 1.0\n"
@@ -29,95 +29,95 @@ msgstr ""
 msgid "Community Tools map page"
 msgstr ""
 
-#: cmtls_map.views_default.inc:493
+#: cmtls_map.views_default.inc:476
 msgid "Master"
 msgstr ""
 
-#: cmtls_map.views_default.inc:494
+#: cmtls_map.views_default.inc:477
 msgid "more"
 msgstr "veel"
 
-#: cmtls_map.views_default.inc:495
+#: cmtls_map.views_default.inc:478
 msgid "Apply"
 msgstr "Rakenda"
 
-#: cmtls_map.views_default.inc:496
+#: cmtls_map.views_default.inc:479
 msgid "Reset"
 msgstr "Lähtesta"
 
-#: cmtls_map.views_default.inc:497
+#: cmtls_map.views_default.inc:480
 msgid "Sort by"
 msgstr "Sorteerimise alus"
 
-#: cmtls_map.views_default.inc:498
+#: cmtls_map.views_default.inc:481
 msgid "Asc"
 msgstr "Kasvav"
 
-#: cmtls_map.views_default.inc:499
+#: cmtls_map.views_default.inc:482
 msgid "Desc"
 msgstr "Kahanev"
 
-#: cmtls_map.views_default.inc:500
+#: cmtls_map.views_default.inc:483
 msgid "Items per page"
 msgstr "Kirjeid lehel"
 
-#: cmtls_map.views_default.inc:501
+#: cmtls_map.views_default.inc:484
 msgid "- All -"
 msgstr "- Kõik -"
 
-#: cmtls_map.views_default.inc:502
+#: cmtls_map.views_default.inc:485
 msgid "Offset"
 msgstr "Nihe"
 
-#: cmtls_map.views_default.inc:503
-msgid "group membership"
+#: cmtls_map.views_default.inc:486
+msgid "OG membership from node"
 msgstr ""
 
-#: cmtls_map.views_default.inc:504
+#: cmtls_map.views_default.inc:487
 msgid "location date"
 msgstr ""
 
-#: cmtls_map.views_default.inc:505
+#: cmtls_map.views_default.inc:488
 msgid "Title"
 msgstr "Pealkiri"
 
-#: cmtls_map.views_default.inc:506
+#: cmtls_map.views_default.inc:489
 msgid "Last comment time"
 msgstr "Viimase kommentaari aeg"
 
-#: cmtls_map.views_default.inc:507
+#: cmtls_map.views_default.inc:490
 msgid "Application content block"
 msgstr ""
 
-#: cmtls_map.views_default.inc:508
+#: cmtls_map.views_default.inc:491
 msgid "Locations on the application page"
 msgstr ""
 
-#: cmtls_map.views_default.inc:509
+#: cmtls_map.views_default.inc:492
 msgid "All"
 msgstr "Kõik"
 
-#: cmtls_map.views_default.inc:510
+#: cmtls_map.views_default.inc:493
 msgid "Application map block"
 msgstr ""
 
-#: cmtls_map.views_default.inc:511
+#: cmtls_map.views_default.inc:494
 msgid "Locations on map on the application page"
 msgstr ""
 
-#: cmtls_map.views_default.inc:512
+#: cmtls_map.views_default.inc:495
 msgid "Latitude"
 msgstr "Laiuskraad"
 
-#: cmtls_map.views_default.inc:513
+#: cmtls_map.views_default.inc:496
 msgid "Longitude"
 msgstr "Pikkuskraad"
 
-#: cmtls_map.views_default.inc:514
-msgid "Page"
-msgstr "Lehekülg"
+#: cmtls_map.views_default.inc:497
+msgid "Global map page"
+msgstr ""
 
-#: cmtls_map.views_default.inc:515
+#: cmtls_map.views_default.inc:498
 msgid "All mapped items"
 msgstr ""
 
