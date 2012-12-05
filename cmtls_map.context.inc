@@ -22,7 +22,7 @@ function cmtls_map_context_default_contexts() {
         'cmtls_map' => 'cmtls_map',
       ),
       'options' => array(
-        'node_form' => '0',
+        'node_form' => '1',
       ),
     ),
     'node' => array(
@@ -41,12 +41,6 @@ function cmtls_map_context_default_contexts() {
           'module' => 'views',
           'delta' => 'cmtls_map-cmtls_map_block',
           'region' => 'content',
-          'weight' => '-10',
-        ),
-        'views-e94908421a9ba94bc30d4cad0a1c03f6' => array(
-          'module' => 'views',
-          'delta' => 'e94908421a9ba94bc30d4cad0a1c03f6',
-          'region' => 'sidebar_first',
           'weight' => '-10',
         ),
       ),
