@@ -12,8 +12,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
-"POT-Creation-Date: 2012-11-05 14:12+0200\n"
-"PO-Revision-Date: 2012-11-05 14:12+0200\n"
+"POT-Creation-Date: 2013-01-07 16:02+0200\n"
+"PO-Revision-Date: 2013-01-07 16:02+0200\n"
 "Last-Translator: NAME <EMAIL@ADDRESS>\n"
 "Language-Team: Estonian <EMAIL@ADDRESS>\n"
 "MIME-Version: 1.0\n"
@@ -21,105 +21,161 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n!=1);\n"
 
-#: cmtls_map.context.inc:59
+#: cmtls_map.context.inc:53
 msgid "CT map"
 msgstr ""
 
-#: cmtls_map.context.inc:60
+#: cmtls_map.context.inc:54
 msgid "Community Tools map page"
 msgstr ""
 
-#: cmtls_map.views_default.inc:476
+#: cmtls_map.views_default.inc:1247
 msgid "Master"
 msgstr ""
 
-#: cmtls_map.views_default.inc:477
+#: cmtls_map.views_default.inc:1248
 msgid "more"
 msgstr "veel"
 
-#: cmtls_map.views_default.inc:478
+#: cmtls_map.views_default.inc:1249
 msgid "Apply"
 msgstr "Rakenda"
 
-#: cmtls_map.views_default.inc:479
+#: cmtls_map.views_default.inc:1250
 msgid "Reset"
 msgstr "Lähtesta"
 
-#: cmtls_map.views_default.inc:480
+#: cmtls_map.views_default.inc:1251
 msgid "Sort by"
 msgstr "Sorteerimise alus"
 
-#: cmtls_map.views_default.inc:481
+#: cmtls_map.views_default.inc:1252
 msgid "Asc"
 msgstr "Kasvav"
 
-#: cmtls_map.views_default.inc:482
+#: cmtls_map.views_default.inc:1253
 msgid "Desc"
 msgstr "Kahanev"
 
-#: cmtls_map.views_default.inc:483
+#: cmtls_map.views_default.inc:1254
 msgid "Items per page"
 msgstr "Kirjeid lehel"
 
-#: cmtls_map.views_default.inc:484
+#: cmtls_map.views_default.inc:1255
 msgid "- All -"
 msgstr "- Kõik -"
 
-#: cmtls_map.views_default.inc:485
+#: cmtls_map.views_default.inc:1256
 msgid "Offset"
 msgstr "Nihe"
 
-#: cmtls_map.views_default.inc:486
+#: cmtls_map.views_default.inc:1257
 msgid "OG membership from node"
 msgstr ""
 
-#: cmtls_map.views_default.inc:487
+#: cmtls_map.views_default.inc:1258
 msgid "location date"
 msgstr ""
 
-#: cmtls_map.views_default.inc:488
+#: cmtls_map.views_default.inc:1259
 msgid "Title"
 msgstr "Pealkiri"
 
-#: cmtls_map.views_default.inc:489
+#: cmtls_map.views_default.inc:1260
 msgid "Last comment time"
 msgstr "Viimase kommentaari aeg"
 
-#: cmtls_map.views_default.inc:490
+#: cmtls_map.views_default.inc:1261
 msgid "Application content block"
 msgstr ""
 
-#: cmtls_map.views_default.inc:491
+#: cmtls_map.views_default.inc:1262
 msgid "Locations on the application page"
 msgstr ""
 
-#: cmtls_map.views_default.inc:492
+#: cmtls_map.views_default.inc:1263
 msgid "All"
 msgstr "Kõik"
 
-#: cmtls_map.views_default.inc:493
+#: cmtls_map.views_default.inc:1264
 msgid "Application map block"
 msgstr ""
 
-#: cmtls_map.views_default.inc:494
+#: cmtls_map.views_default.inc:1265
 msgid "Locations on map on the application page"
 msgstr ""
 
-#: cmtls_map.views_default.inc:495
+#: cmtls_map.views_default.inc:1266
 msgid "Latitude"
 msgstr "Laiuskraad"
 
-#: cmtls_map.views_default.inc:496
+#: cmtls_map.views_default.inc:1267
 msgid "Longitude"
 msgstr "Pikkuskraad"
 
-#: cmtls_map.views_default.inc:497
+#: cmtls_map.views_default.inc:1268
 msgid "Global map page"
 msgstr ""
 
-#: cmtls_map.views_default.inc:498
+#: cmtls_map.views_default.inc:1269
 msgid "All mapped items"
 msgstr ""
+
+#: cmtls_map.views_default.inc:1270
+msgid "Group OL overlay"
+msgstr ""
+
+#: cmtls_map.views_default.inc:1271
+msgid "OpenLayers overlay for groups"
+msgstr ""
+
+#: cmtls_map.views_default.inc:1272
+msgid "node being the OG group"
+msgstr ""
+
+#: cmtls_map.views_default.inc:1273
+msgid "Application OL overlay"
+msgstr ""
+
+#: cmtls_map.views_default.inc:1274
+msgid "OpenLayers overlay for applications"
+msgstr ""
+
+#: cmtls_map.views_default.inc:1275
+msgid "Posts OL overlay"
+msgstr ""
+
+#: cmtls_map.views_default.inc:1276
+msgid "OpenLayers overlay for posts"
+msgstr ""
+
+#: cmtls_map.views_default.inc:1277
+msgid "Locations OL overlay"
+msgstr ""
+
+#: cmtls_map.views_default.inc:1278
+msgid "OpenLayers overlay for locations"
+msgstr ""
+
+#: cmtls_map.views_default.inc:1279
+msgid "Events OL overlay"
+msgstr ""
+
+#: cmtls_map.views_default.inc:1280
+msgid "OpenLayers overlay for events"
+msgstr ""
+
+#: cmtls_map.views_default.inc:1281
+msgid "Media OL overlay"
+msgstr ""
+
+#: cmtls_map.views_default.inc:1282
+msgid "OpenLayers overlay for media"
+msgstr ""
+
+#: cmtls_map.views_default.inc:1283
+msgid "Description"
+msgstr "Kirjeldus"
 
 #: cmtls_map.module:17
 msgid "Map"
